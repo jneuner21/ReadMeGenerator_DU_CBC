@@ -26,7 +26,7 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
 
-  ## Description
+  ## Description${renderLicenseLink(data.license)}  
   ${data.description}
 
   ## Table of contents
