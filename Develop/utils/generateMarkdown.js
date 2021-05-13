@@ -26,7 +26,7 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
 
-  ## Description${renderLicenseLink(data.license)}  
+  ## Description ${renderLicenseLink(data.license)}  
   ${data.description}
 
   ## Table of contents
@@ -42,7 +42,8 @@ function generateMarkdown(data) {
 
   ## Usage  
   ${data.usage}  
-  md ![alt text](assets/images/screenshot.png)
+    
+  ![alt text](assets/images/screenshot.png)
   
   ## Credit
   ${data.contributors}
@@ -50,8 +51,8 @@ function generateMarkdown(data) {
   ## Features
   ${data.features}
   
-  ## How to Contribute  
-  Reach me here  
+  ## Questions  
+  Reach me here:    
   ${data.name}  
   Email: ${data.email}   
   GitHub: ${data.github}  

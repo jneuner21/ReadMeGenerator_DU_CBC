@@ -83,7 +83,7 @@ function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(data);
     //figure out how to take those responses from the user and write them to a file
-    writeToFile("../README.md", generateMarkdown(data));
+    writeToFile("../READMsample.md", generateMarkdown(data));
     })
 }
 
